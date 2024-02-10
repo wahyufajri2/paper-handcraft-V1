@@ -128,6 +128,21 @@ body {
 }
 
 /* Shopping Cart */
+#shopping-cart-button {
+  position: relative;
+}
+
+#shopping-cart-button .quantity-badge {
+  display: inline-block;
+  padding: 1px 5px;
+  background-color: red;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
 .shopping-cart {
   position: absolute;
   top: 100%;
@@ -155,27 +170,83 @@ body {
 }
 
 .shopping-cart img {
-  height: 6rem;
+  height: 4rem;
   border-radius: 50%;
 }
 
 .shopping-cart h3 {
-  font-size: 1.6rem;
-  padding-bottom: 0.5rem;
+  font-size: 1.4rem;
 }
 
 .shopping-cart .item-price {
   font-size: 1.2rem;
 }
 
-.shopping-cart .remove-item {
-  position: absolute;
-  right: 1rem;
+.shopping-cart .cart-item #add,
+.shopping-cart .cart-item #remove {
+  display: inline-block;
+  padding: 2px 5px;
   cursor: pointer;
+  margin: 0 8px;
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
-.shopping-cart .remove-item:hover {
-  color: var(--primary);
+.shopping-cart h4 {
+  margin-top: -1rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* Checkout Form */
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px dashed black;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.form-container h5 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.form-container form {
+  width: 100%;
+  text-align: center;
+}
+
+.form-container label {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.form-container span {
+  text-align: right;
+}
+
+.form-container input {
+  background-color: #ddd;
+  padding: 5px;
+  font-size: 1rem;
+  width: 70%;
+}
+
+.form-container .checkout-button {
+  padding: 6px 14px;
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin: 1rem auto;
+  cursor: pointer;
 }
 
 /* Hero Section */
@@ -361,20 +432,20 @@ body {
   margin-top: 4rem;
 }
 
-.sales .product-card {
+.sales .sale-card {
   text-align: center;
   border: 1px solid #666;
   padding: 2rem;
   border-radius: 0.5rem;
 }
 
-.sales .product-icons {
+.sales .sale-icons {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
 }
 
-.sales .product-icons a {
+.sales .sale-icons a {
   width: 4rem;
   height: 4rem;
   color: #fff;
@@ -386,42 +457,36 @@ body {
   align-items: center;
 }
 
-.sales .product-icons a:hover {
+.sales .sale-icons a:hover {
   background-color: var(--primary);
   border: 1px solid var(--primary);
 }
 
-.sales .product-image {
+.sales .sale-image {
   padding: 1rem 0;
 }
 
-.sales .product-image img {
+.sales .sale-image img {
   height: 25rem;
 }
 
-.sales .product-content h3 {
+.sales .sale-content h3 {
   font-size: 2rem;
 }
 
-.sales .product-stars {
+.sales .sale-stars {
   font-size: 1.7rem;
   padding: 0.8rem;
   color: var(--primary);
 }
 
-.sales .product-stars #star-full {
+.sales .sale-stars #star-full {
   fill: var(--primary);
 }
 
-.sales .product-price {
+.sales .sale-price {
   font-size: 1.3rem;
   font-weight: bold;
-}
-
-.sales .product-price span {
-  text-decoration: line-through;
-  font-weight: lighter;
-  font-size: 1rem;
 }
 
 /* Contact Section */
