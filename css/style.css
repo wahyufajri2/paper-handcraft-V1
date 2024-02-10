@@ -19,7 +19,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
-  color: #fff;
+  color: #f8f7f4;
 }
 
 /* Navbar */
@@ -40,7 +40,7 @@ body {
 .navbar .navbar-logo {
   font-size: 2rem;
   font-weight: 700;
-  color: #fff;
+  color: #f8f7f4;
   font-style: italic;
   display: flex;
   align-items: center;
@@ -56,7 +56,7 @@ body {
 }
 
 .navbar .navbar-nav a {
-  color: #fff;
+  color: #f8f7f4;
   display: inline-block;
   font-size: 1.3rem;
   margin: 0 1rem;
@@ -80,7 +80,7 @@ body {
 }
 
 .navbar .navbar-extra a {
-  color: #fff;
+  color: #f8f7f4;
   margin: 0 0.5rem;
 }
 
@@ -98,7 +98,7 @@ body {
   top: 100%;
   right: 7%;
   border-radius: 0.5rem;
-  background-color: #fff;
+  background-color: #f8f7f4;
   width: 50rem;
   height: 5rem;
   display: flex;
@@ -150,7 +150,7 @@ body {
   height: 100vh;
   width: 35rem;
   padding: 0 1.5rem;
-  background-color: #fff;
+  background-color: #f8f7f4;
   color: var(--bg);
   transition: 0.3s;
 }
@@ -294,7 +294,7 @@ body {
 
 .hero .content h1 {
   font-size: 3.5em;
-  color: #fff;
+  color: #f8f7f4;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   line-height: 1.2;
 }
@@ -318,7 +318,7 @@ body {
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.4rem;
-  color: #fff;
+  color: #f8f7f4;
   background-color: var(--primary);
   border-radius: 0.5rem;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
@@ -448,7 +448,7 @@ body {
 .sales .sale-icons a {
   width: 4rem;
   height: 4rem;
-  color: #fff;
+  color: #f8f7f4;
   margin: 0.3rem;
   border: 1px solid #666;
   border-radius: 50%;
@@ -523,7 +523,7 @@ body {
   padding: 2rem;
   font-size: 1.7rem;
   background: none;
-  color: #fff;
+  color: #f8f7f4;
 }
 
 .contact .row form .btn {
@@ -661,7 +661,7 @@ footer .credit p a {
 }
 
 /* Tablet */
-@media (max-width: 758px) {
+@media (max-width: 884px) {
   html {
     font-size: 62.5%;
   }
@@ -674,7 +674,7 @@ footer .credit p a {
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: #fff;
+    background-color: #f8f7f4;
     width: 30rem;
     height: 100vh;
     transition: 0.3s;
@@ -753,5 +753,78 @@ footer .credit p a {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+}
+
+/* Watches */
+@media screen and (orientation: portrait) and (max-width: 162px) {
+  html {
+    font-size: 15%; /* Adjust as needed */
+  }
+
+  #hamburger-products {
+    display: block; /* Show hamburger menu on watches */
+  }
+
+  .navbar .navbar-nav {
+    display: none; /* Hide full navbar on watches */
+  }
+
+  .products p,
+  .about .row .content p {
+    font-size: 1rem; /* Smaller font size for text content */
+  }
+
+  .about .row .about-img img {
+    height: 20rem; /* Smaller image size */
+  }
+
+  .contact .row .map {
+    height: 20rem; /* Smaller map size */
+  }
+
+  .modal-content img {
+    height: 10rem; /* Smaller image size */
+  }
+
+  .modal-content p {
+    font-size: 1rem; /* Smaller font size for text content */
+  }
+
+  .modal-content a {
+    padding: 0.5rem 1rem; /* Smaller button size */
+  }
+
+  .modal-container {
+    margin: 5% auto; /* Smaller margin */
+  }
+
+  .modal-container .close-icon {
+    right: 0.5rem; /* Smaller close icon position */
+  }
+
+  .modal-container .close-icon svg {
+    width: 1.5rem; /* Smaller close icon size */
+    height: 1.5rem; /* Smaller close icon size */
+  }
+
+  .modal-container .close-icon svg path {
+    stroke-width: 2; /* Thicker close icon stroke */
+  }
+
+  .modal-container .close-icon svg path:hover {
+    stroke-width: 3; /* Thicker close icon stroke */
+  }
+
+  .modal-container .close-icon svg path:active {
+    stroke-width: 4; /* Thicker close icon stroke */
+  }
+
+  .modal-container .close-icon svg path:focus {
+    stroke-width: 4; /* Thicker close icon stroke */
+  }
+
+  .modal-container .close-icon svg path:visited {
+    stroke-width: 4; /* Thicker close icon stroke */
   }
 }
