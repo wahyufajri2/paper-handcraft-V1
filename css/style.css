@@ -29,7 +29,7 @@ body {
   align-items: center;
   padding: 1.4rem 7%;
   background-color: rgba(1, 1, 1, 0.8);
-  border-bottom: 1px solid #513c28;
+  border-bottom: 1px solid #ffafb2;
   position: fixed;
   top: 0;
   left: 0;
@@ -116,7 +116,7 @@ body {
   height: 100%;
   width: 100%;
   font-size: 1.6rem;
-  color: var(--bg);
+  color: var(--primary);
   padding: 1rem;
 }
 
@@ -514,8 +514,12 @@ body {
   margin-top: 2rem;
   border-radius: 0.5rem;
   background-color: var(--bg);
-  border: 1px solid #eee;
+  border: 1px solid #ffafb2;
   padding-left: 2rem;
+}
+
+.contact .row form .input-group input:hover {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
 .contact .row form .input-group input {
@@ -523,7 +527,7 @@ body {
   padding: 2rem;
   font-size: 1.7rem;
   background: none;
-  color: #f8f7f4;
+  color: var(--primary);
 }
 
 .contact .row form .btn {
@@ -535,6 +539,10 @@ body {
   color: #1f1717;
   background-color: var(--primary);
   cursor: pointer;
+}
+
+.contact .row form .btn:hover {
+  box-shadow: 0 0 10px rgba(255, 83, 83, 0.7); /* Shadow on hover */
 }
 
 /* Footer */
